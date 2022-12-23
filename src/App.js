@@ -1,11 +1,7 @@
 // CSS
 import './App.css';
-
 // IMG
 import AluraLogo from './assets/alura-logo.png';
-import MeninoComLupa from './assets/menino-lupa.png';
-import ExclamationCircle from './assets/exclamation-circle.png';
-
 // components
 import Encriptador from './components/Encriptador';
 

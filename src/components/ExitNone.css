@@ -1,0 +1,25 @@
+.conteudo-resultado-vazio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background: var(--background-div);
+    width: 80%;
+    height: 100%;
+    padding: auto 20px;
+    border-radius: 20px;
+}
+
+.conteudo-resultado-vazio img {
+    width: 230px;
+}
+
+.conteudo-resultado-vazio h2 {
+    font-size: 24px;
+}
+
+.conteudo-resultado-vazio p {
+    font-size: 16px;
+}

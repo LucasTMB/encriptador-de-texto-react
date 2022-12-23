@@ -27,6 +27,7 @@ button {
   font-weight: bold;
   cursor: pointer;
   transition: 1s all;
+  margin-right: 15px;
 }
 
 button:hover {

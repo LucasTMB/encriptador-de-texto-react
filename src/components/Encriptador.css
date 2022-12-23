@@ -1,7 +1,48 @@
+.main {
+    height: calc(100vh - 96px);
+}
+
 .container {
     display: flex;
     width: 1200px;
-    height: calc(100vh - 56px);
     margin: 0 auto;
     justify-content: space-between;
+}
+
+.entrada {
+    width: 55%;
+}
+
+.entrada textarea {
+    border: none;
+    width: 100%;
+    background: none;
+    font-size: 25px;
+    color: var(--blue);
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.entrada textarea:focus {
+    border: 0 none;
+    outline: 0;
+}
+
+::placeholder {
+    color: var(--blue);
+}
+
+.saida {
+    width: 40%;
+}
+
+.cripto-btn, 
+copy-btn {
+    background: var(--blue);
+    color: white;
+}
+
+.descripto-btn {
+    background: var(--background-div);
+    color: var(--blue);
 }
