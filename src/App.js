@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+// CSS
 import './App.css';
+
+// IMG
+import AluraLogo from './assets/alura-logo.png';
+import MeninoComLupa from './assets/menino-lupa.png';
+import ExclamationCircle from './assets/exclamation-circle.png';
+
+// components
+import Encriptador from './components/Encriptador';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1 className="logo-alura">
+          <img src={AluraLogo} alt="Logo da Alura" />
+        </h1>
       </header>
+
+      <Encriptador />
+      
     </div>
   );
 }
