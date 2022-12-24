@@ -13,14 +13,50 @@ const stages = [
 const Encriptador = () => {
 
     const [exitStage, setExitStage] = useState(stages[0].name);
-    const [input, setInput] = useState('');
+    const [inputText, setInputText] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
     }
 
     const botaoCriptografar = () => {
-        console.log(input);
+        console.log(inputText);
+        const textoEncriptado = criptografar(inputText);
+        console.log(textoEncriptado);
+    }
+
+    const botaoDescriptografar = () => {
+        console.log(inputText);
+        const textoDescriptado = descriptografar(inputText);
+        console.log(textoDescriptado);
+    }
+
+    const criptografar = (inputText) => {
+        const matrizCodigo = [['a', 'ai'], ['e', 'enter'], ['i', 'imes'], ['o', 'ober'], ['u', 'ufat'], ['aimes', 'ai']];
+
+        let stringEncriptada = inputText;
+        stringEncriptada = stringEncriptada.toLowerCase();
+
+        for (let i = 0 ; i < matrizCodigo.length ; i++) {
+            if (stringEncriptada.includes(matrizCodigo[i][0])) {
+                stringEncriptada = stringEncriptada.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1]);
+            }
+        }
+        return stringEncriptada;
+    }
+
+    const descriptografar = (inputText) => {
+        const matrizCodigo = [['a', 'ai'], ['e', 'enter'], ['i', 'imes'], ['o', 'ober'], ['u', 'ufat']];
+
+        let stringDescriptada = inputText;
+        stringDescriptada = stringDescriptada.toLowerCase();
+
+        for (let i = 0 ; i < matrizCodigo.length ; i++) {
+            if (stringDescriptada.includes(matrizCodigo[i][1])) {
+                stringDescriptada = stringDescriptada.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0]);
+            }
+        }
+        return stringDescriptada;
     }
 
   return (
@@ -36,7 +72,7 @@ const Encriptador = () => {
                     rows="13" 
                     placeholder="Digite seu texto..."
                     onChange={(e) => {
-                        setInput(e.target.value)
+                        setInputText(e.target.value)
                     }}
                 ></textarea>
                 <p>
@@ -45,10 +81,14 @@ const Encriptador = () => {
                 <div className="botoes">
                     <button 
                         className="cripto-btn"
-                        onClick={botaoCriptografar}>
+                        onClick={botaoCriptografar}
+                    >
                         Criptografar
                     </button>
-                    <button className="descripto-btn">
+                    <button
+                        className="descripto-btn"
+                        onClick={botaoDescriptografar}    
+                    >
                         Descriptografar
                     </button>
                 </div>
