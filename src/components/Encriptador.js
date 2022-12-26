@@ -12,7 +12,7 @@ const stages = [
 
 const Encriptador = () => {
 
-    const [exitStage, setExitStage] = useState(stages[0].name);
+    const [exitStage, setExitStage] = useState(stages[1].name);
     const [inputText, setInputText] = useState('');
 
     const handleSubmit = (e) => {
@@ -96,7 +96,9 @@ const Encriptador = () => {
 
             <div className='saida'>
                 {exitStage === 'resultadoVazio' && <ExitNone />}
-                {exitStage === 'resultadoOK' && <ExitOK />}
+                {exitStage === 'resultadoOK' && <ExitOK 
+                    handleSubmit={handleSubmit}
+                />}
             </div>
         </div>
     </div>
