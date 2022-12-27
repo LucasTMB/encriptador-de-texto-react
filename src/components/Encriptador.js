@@ -12,8 +12,9 @@ const stages = [
 
 const Encriptador = () => {
 
-    const [exitStage, setExitStage] = useState(stages[1].name);
+    const [exitStage, setExitStage] = useState(stages[0].name);
     const [inputText, setInputText] = useState('');
+    const [outputText, setOutputText] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -23,12 +24,16 @@ const Encriptador = () => {
         console.log(inputText);
         const textoEncriptado = criptografar(inputText);
         console.log(textoEncriptado);
+        setOutputText(textoEncriptado);
+        setExitStage(stages[1].name);
     }
 
     const botaoDescriptografar = () => {
         console.log(inputText);
         const textoDescriptado = descriptografar(inputText);
         console.log(textoDescriptado);
+        setOutputText(textoDescriptado);
+        setExitStage(stages[1].name);
     }
 
     const criptografar = (inputText) => {
@@ -98,6 +103,9 @@ const Encriptador = () => {
                 {exitStage === 'resultadoVazio' && <ExitNone />}
                 {exitStage === 'resultadoOK' && <ExitOK 
                     handleSubmit={handleSubmit}
+                    outputText={outputText}
+                    botaoCriptografar={botaoCriptografar}
+                    botaoDescriptografar={botaoDescriptografar}
                 />}
             </div>
         </div>

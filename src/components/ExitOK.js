@@ -1,7 +1,7 @@
 // CSS
 import './ExitOK.css';
 
-const ExitOK = ({handleSubmit}) => {
+const ExitOK = ({handleSubmit, outputText, botaoCriptografar, botaoDescriptografar}) => {
   return (
     <div className='conteudo-resultado-ok'>
       <form 
@@ -11,6 +11,7 @@ const ExitOK = ({handleSubmit}) => {
           name="text-output" 
           cols="20" 
           rows="10"
+          value={outputText}
         ></textarea>
         <button 
           className='copy-btn'>
