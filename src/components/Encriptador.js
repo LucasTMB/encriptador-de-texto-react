@@ -104,8 +104,6 @@ const Encriptador = () => {
                 {exitStage === 'resultadoOK' && <ExitOK 
                     handleSubmit={handleSubmit}
                     outputText={outputText}
-                    botaoCriptografar={botaoCriptografar}
-                    botaoDescriptografar={botaoDescriptografar}
                 />}
             </div>
         </div>
