@@ -2,6 +2,7 @@
 import './Encriptador.css';
 // React imports
 import { useState } from 'react';
+// components
 import { ExitNone } from './ExitNone';
 import ExitOK from './ExitOK';
 
@@ -15,24 +16,23 @@ const Encriptador = () => {
     const [exitStage, setExitStage] = useState(stages[0].name);
     const [inputText, setInputText] = useState('');
     const [outputText, setOutputText] = useState('');
+    const [copyText, setCopyText] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
     }
 
     const botaoCriptografar = () => {
-        console.log(inputText);
         const textoEncriptado = criptografar(inputText);
-        console.log(textoEncriptado);
         setOutputText(textoEncriptado);
+        setCopyText(textoEncriptado);
         setExitStage(stages[1].name);
     }
 
     const botaoDescriptografar = () => {
-        console.log(inputText);
         const textoDescriptado = descriptografar(inputText);
-        console.log(textoDescriptado);
         setOutputText(textoDescriptado);
+        setCopyText(textoDescriptado);
         setExitStage(stages[1].name);
     }
 
@@ -104,6 +104,7 @@ const Encriptador = () => {
                 {exitStage === 'resultadoOK' && <ExitOK 
                     handleSubmit={handleSubmit}
                     outputText={outputText}
+                    copyText={copyText}
                 />}
             </div>
         </div>

@@ -1,20 +1,13 @@
 // CSS
 import './ExitOK.css';
 // React imports
-import { useState } from 'react';
 import copy from "copy-to-clipboard";
 
-const ExitOK = ({handleSubmit, outputText}) => {
-
-  const [copyText, setCopyText] = useState('');
+const ExitOK = ({handleSubmit, outputText, copyText}) => {
 
   const botaoCopiar = () => {
-      //let textoCopiado = copiar(outputText);
-      setCopyText(outputText);
       copy(copyText);
       alert(`Você copiou "${copyText}"`)
-
-      // Função com falha. Por algum motivo é necessário clicar duas vezes no botão de copiar para atualizar o copyText.
   }
 
   return (
