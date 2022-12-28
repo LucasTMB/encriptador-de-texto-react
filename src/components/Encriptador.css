@@ -46,3 +46,75 @@ copy-btn {
     background: var(--background-div);
     color: var(--blue);
 }
+
+@media screen and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+    }
+
+    .entrada {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        margin: 5px;
+    }
+
+    .entrada textarea {
+        width: 100vw;
+        height: calc(100vh - 500px);
+        font-size: 20px;
+    }
+
+    .entrada p {
+        width: auto;
+        font-size: 15px;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cripto-btn,
+    .descripto-btn {
+        margin: 5px 0;
+    }
+
+    .saida {
+        width: 100vw;
+        margin: 5px;
+    }
+}
+
+@media screen and 
+(min-width: 481px) and
+(max-width: 1199px) {
+    .container,
+    .entrada,
+    .saida {
+        width: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .entrada,
+    .saida {
+        margin: 5px;
+    }
+
+    .entrada textarea {
+        height: calc(100vh - 400px);
+    }
+
+    .cripto-btn,
+    .descripto-btn {
+        margin: 5px 10px;
+    }
+}

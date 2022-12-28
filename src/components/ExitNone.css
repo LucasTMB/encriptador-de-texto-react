@@ -23,3 +23,22 @@
 .conteudo-resultado-vazio p {
     font-size: 15px;
 }
+
+@media screen and (max-width: 480px) {
+    .conteudo-resultado-vazio img {
+        display: none;
+    }
+
+    .conteudo-resultado-vazio h2,
+    .conteudo-resultado-vazio p {
+        width: 65%;
+    }
+}
+
+@media screen and 
+(min-width: 481px) and
+(max-width: 1199px) {
+    .conteudo-resultado-vazio img {
+        display: none;
+    }
+}

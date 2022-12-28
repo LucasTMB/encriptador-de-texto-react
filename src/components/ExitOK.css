@@ -23,3 +23,29 @@
 .conteudo-resultado-ok textarea {
     outline: 0;
 }
+
+.copy-btn {
+    color: var(--blue);
+}
+
+@media screen and (max-width: 480px) {
+    .conteudo-resultado-ok textarea {
+        height: auto;
+    }
+
+    .copy-btn {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and 
+(min-width: 481px) and
+(max-width: 1199px) {
+    .conteudo-resultado-ok textarea {
+        height: auto;
+    }
+
+    .copy-btn {
+        margin-bottom: 10px;
+    }
+}
