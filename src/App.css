@@ -16,6 +16,12 @@ header h1 {
     cursor: pointer;
 }
 
+.logo-btn {
+    background: none;
+    width: auto;
+    border: none;
+}
+
 @media screen and (max-width: 480px) {
     header {
         width: 100vw;

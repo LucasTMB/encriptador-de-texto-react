@@ -6,16 +6,16 @@ import { useState } from 'react';
 import { ExitNone } from './ExitNone';
 import ExitOK from './ExitOK';
 
-const stages = [
-    {id: 1, name: 'resultadoVazio'},
-    {id: 2, name: 'resultadoOK'},
-]
+const Encriptador = ({
+    stages,
+    exitStage, 
+    setExitStage, 
+    inputText, 
+    setInputText, 
+    outputText, 
+    setOutputText
+}) => {
 
-const Encriptador = () => {
-
-    const [exitStage, setExitStage] = useState(stages[0].name);
-    const [inputText, setInputText] = useState('');
-    const [outputText, setOutputText] = useState('');
     const [copyText, setCopyText] = useState('');
 
     const handleSubmit = (e) => {
