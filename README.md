@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Encriptador de Texto da Alura em React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="./encriptador-print.png" alt="exemplo imagem">
 
-## Available Scripts
+> Aqui temos um encriptador de texto que consegue criptografar e descriptografar uma mensagem. Perfeito para mandar mensagens confidenciais!
+:)
 
-In the project directory, you can run:
+### Ajustes e melhorias
 
-### `npm start`
+O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [ ] Criação de um modo noturno
+- [ ] Possibilidade de interpretar letras com acentos
+- [ ] Possibilidade de troca de idiomas entre 🇧🇷/🇺🇸
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📑 Pré-requisitos
 
-### `npm test`
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Você instalou a versão mais recente do `Windows 10 / Windows 11`;
+* Você instalou o `Node.js`;
 
-### `npm run build`
+Caso não possua o Node, instale através desse link: [Instale o Node](https://nodejs.org/en/);
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📥 Clonando o repositório
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para clonar o repositório e utilizá-lo na sua máquina, siga estas etapas:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Copie o link do repositório;
+* Crie uma pasta que receberá o repositório;
+* Abra o Git Bash na pasta criada;
+* Utilize o comando `git clone https://github.com/LucasTMB/encriptador-de-texto-react.git`;
+* Acesse a pasta do repositório;
+* Pronto, agora é só usar!
 
-### `npm run eject`
+## 🚀 Rodando o projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Primeiramente, abra o terminal dentro do projeto e use o comando `npm install`. Esse comando permitirá a instalação do `node_modules`, com todas as dependências necessárias para o funcionamento do Node e do React.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### No diretório do projeto, você pode executar:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+npm start
+```
+> Executa o aplicativo no modo de desenvolvimento. Abra [http://localhost:3000](http://localhost:3000) para visualizar em seu navegador.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm test
+```
+> Inicia o executor de teste no modo de observação interativo. Consulte a seção sobre [execução de testes](https://facebook.github.io/create-react-app/docs/running-tests) para obter mais informações.
 
-## Learn More
+## 💻 Como usar a aplicação
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Insira o texto que você deseja criptografar/descriptografar no input à esquerda;
+* Aperte um dos botões abaixo, realizando a ação que você deseja;
+* O texto criptografado/descriptografado aparecerá à direita;
+* Você pode copiar o texto clicando no botão abaixo;
+* É possível reiniciar a página clicando no logo da Alura, na parte superior esquerda da tela.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤳 Como me achar
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<a href="https://www.linkedin.com/in/lucastmbarros/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+<a href = "mailto:lucastmbarros@fac.pe.senac.br"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
