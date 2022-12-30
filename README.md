@@ -1,8 +1,6 @@
 # Encriptador de Texto da Alura em React
 
-<img src="./encriptador-print.png" alt="exemplo imagem">
-
-> Aqui temos um encriptador de texto que consegue criptografar e descriptografar uma mensagem. Perfeito para mandar mensagens confidenciais!
+Aqui temos um encriptador de texto que consegue criptografar e descriptografar uma mensagem. Perfeito para mandar mensagens confidenciais!
 :)
 
 ### Ajustes e melhorias
