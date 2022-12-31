@@ -35,6 +35,8 @@ Para clonar o repositório e utilizá-lo na sua máquina, siga estas etapas:
 
 Primeiramente, abra o terminal dentro do projeto e use o comando `npm install`. Esse comando permitirá a instalação do `node_modules`, com todas as dependências necessárias para o funcionamento do Node e do React.
 
+Também é necessário o uso do comando `npm install --save react-copy-to-clipboard`. Ele permitirá que o aplicativo possa fazer a cópia do output a partir do botão `Copiar Texto`.
+
 ### No diretório do projeto, você pode executar:
 
 ```
